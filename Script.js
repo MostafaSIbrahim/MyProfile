@@ -22,4 +22,25 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.opacity = "0";
         observer.observe(el);
     });
+    emailjs.init("YOUR_PUBLIC_KEY");
+
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Change button state
+        const btn = contactForm.querySelector('button');
+        btn.innerText = 'Sending...';
+
+        // These IDs come from your EmailJS dashboard
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(() => {
+                alert('Message sent successfully!');
+                btn.innerText = 'Send Message';
+                contactForm.reset();
+            }, (error) => {
+                alert('Failed to send message. Please try again.');
+                btn.innerText = 'Send Message';
+            });
+    });
 });

@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top glass-nav py-4">
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="logo.png" alt="MS Branding Logo" height="70" class="me-3 animate__animated animate__fadeIn">
+                <img src="logo.png" alt="MS Branding Logo" height="80" class="me-3 animate__animated animate__fadeIn">
                 <div class="brand-text">
                     <span class="fw-black fs-2 d-block leading-none">MOSTAFA</span>
                     <span class="fw-light fs-4 text-primary tracking-widest">SAFWAT</span>
@@ -22,9 +22,10 @@
             </a>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav gap-4 fs-5">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold" href="#expertise">Expertise</a></li>
-                    <li class="nav-item"><a class="btn btn-primary btn-lg text-white rounded-0 px-5"
+                    <li class="nav-item"><a class="btn btn-primary btn-lg text-white rounded-2 px-15"
                             href="#contact">Contact Me</a></li>
                 </ul>
             </div>
@@ -37,7 +38,7 @@
                 <div class="col-lg-7">
                     <h1 class="display-1 fw-black animate__animated animate__fadeInLeft">Head of IT Operations</h1>
                     <p class="fs-3 text-secondary mt-4 animate__animated animate__fadeInUp">25+ years of strategic
-                        leadership in financial technology and digital transformation.</p>
+                        leadership in information technology and digital transformation.</p>
                 </div>
                 <div class="col-lg-5 text-center">
                     <div class="image-container animate__animated animate__zoomIn">
@@ -59,7 +60,78 @@
             </div>
         </div>
     </section>
+    <section id="expertise" class="py-10 bg-charcoal text-white">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-10">Strategic Expertise</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="expertise-card p-4 rounded-4 h-100">
+                        <div class="expertise-icon mb-3">📊</div>
+                        <h3 class="h4 fw-bold">IT Strategy & Operations</h3>
+                        <p class="opacity-75">Over 25 years of experience managing large-scale IT operations and infrastructure for major financial and governmental organizations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="expertise-card p-4 rounded-4 h-100">
+                        <div class="expertise-icon mb-3">🚀</div>
+                        <h3 class="h4 fw-bold">Digital Transformation</h3>
+                        <p class="opacity-75">Leading organizational change through modern technology adoption, streamlining workflows, and enhancing digital service delivery.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="expertise-card p-4 rounded-4 h-100">
+                        <div class="expertise-icon mb-3">💻</div>
+                        <h3 class="h4 fw-bold">Full-Stack Development</h3>
+                        <p class="opacity-75">Architecting robust solutions using .NET Core and Python/Django, backed by deep knowledge of SQL and modern JS frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Send a Message</h2>
+                    <form id="contact-form" class="bg-white p-4 rounded-4 text-dark">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-lg">Send Message</button>
+                    </form>
+                </div>
 
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="display-6 fw-bold mb-4">Connect</h2>
+                    <p class="fs-5 mb-4">Looking for strategic IT leadership or full-stack development expertise?</p>
+                    
+                    <div class="mb-4">
+                        <p class="mb-1"><strong class="text-primary">Email:</strong> <a href="mailto:mostafa.safwat@gmail.com" class="text-white text-decoration-none">mostafa.safwat@gmail.com</a></p>
+                        <p><strong class="text-primary">WhatsApp:</strong> <a href="https://wa.me/201000000000" class="text-white text-decoration-none">+20 100 000 0000</a></p>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="https://linkedin.com/in/mostafasafwat" class="btn btn-outline-light">LinkedIn</a>
+                        <a href="https://github.com/MostafaSIbrahim" class="btn btn-outline-light">GitHub</a>
+                        <a href="#" class="btn btn-outline-light">Upwork</a>
+                        <a href="#" class="btn btn-outline-light">Freelancer</a>
+                        <a href="#" class="btn btn-outline-light">Freelanceyard</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-75">
+                <p>&copy; 2026 Mostafa Safwat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 

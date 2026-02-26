@@ -1,7 +1,26 @@
 :root {
     --primary: #0078d4;
-    --dark: #0f172a;
+    --dark: #2c3e80;
     --light-bg: #fcfcfd;
+}
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Matches your navbar height to prevent overlap */
+}
+
+/* Make sections occupy the full viewport */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    padding: 100px 0; /* Extra breathing room */
+}
+
+/* Specific background for the expertise section to create visual separation */
+.bg-charcoal {
+    background-color: #2C3E50 !important;
 }
 
 body {
@@ -11,7 +30,7 @@ body {
 }
 
 .glass-nav {
-    background: rgba(252, 252, 253, 0.95);
+    background: rgba(210, 234, 251, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease;
@@ -39,10 +58,12 @@ body {
     border-radius: 20px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
 }
 
 .hero-section {
     background: radial-gradient(circle at top right, #e0f2fe, transparent 60%);
+    margin-bottom: 10px;
 }
 
 .image-wrapper img {
@@ -72,4 +93,66 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
     border-color: var(--primary);
     color: var(--primary);
+}
+.py-5 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+#contact-form .form-control {
+    border: 1px solid #e2e8f0;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#contact-form .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 120, 212, 0.1);
+}
+
+.btn-outline-light:hover {
+    color: var(--dark);
+    background-color: #fff;
+}
+/* Charcoal Blue Palette */
+.bg-charcoal {
+    background-color: #2C3E50 !important; /* Professional Charcoal Blue */
+}
+
+.expertise-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.expertise-icon {
+    font-size: 2.5rem;
+}
+
+/* Section Title Highlight */
+#expertise h2 {
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#expertise h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
 }
